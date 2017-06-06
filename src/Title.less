@@ -1,0 +1,40 @@
+/**
+ * Title Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+
+@__titlePrefixCls: kuma-title;
+
+.@{__titlePrefixCls} {
+  &-primary {
+    font-size: 20px;
+    margin: 24px 0 30px;
+    color: @dark-alpha-2;
+  }
+  &-secondary {
+    font-size: 16px;
+    color: @dark-alpha-2;
+    margin: 30px 0 20px;
+    position: relative;
+    border-bottom: 1px solid @normal-alpha-7;
+    line-height: 32px;
+    &:before {
+      content: '';
+      border-left: 3px solid @brand-primary;
+      height: 14px;
+      display: inline-block;
+      margin-right: 8px;
+      position: relative;
+      top: 1px;
+    }
+  }
+  &-thirdary {
+    color: @normal-alpha-3;
+    font-size: 14px;
+    margin: 20px 0 12px;
+  }
+}
+
