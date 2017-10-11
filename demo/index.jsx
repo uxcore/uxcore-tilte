@@ -1,14 +1,14 @@
 /**
- * Tilte Component Demo for uxcore
+ * Title Component Demo for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
 
-const ReactDOM = require('react-dom');
-const React = require('react');
-const Demo = require('./TitleDemo');
+import ReactDOM from 'react-dom';
+import React from 'react';
+import Demo from './TitleDemo';
 
 ReactDOM.render(<Demo />, document.getElementById('UXCoreDemo'));
 

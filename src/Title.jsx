@@ -2,15 +2,27 @@
  * Title Component for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
-const React = require('react');
-const classnames = require('classnames');
 
-const { PropTypes } = React;
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
-class Title extends React.Component {
+export default class Title extends Component {
+  static displayName = 'Title';
+
+  static propTypes = {
+    children: PropTypes.any,
+    prefixCls: PropTypes.string,
+    type: PropTypes.oneOf(['primary', 'secondary', 'thirdary']),
+  };
+
+  static defaultProps = {
+    prefixCls: 'kuma-title',
+    type: 'primary',
+  };
 
   constructor(props) {
     super(props);
@@ -30,20 +42,3 @@ class Title extends React.Component {
     );
   }
 }
-
-Title.defaultProps = {
-  prefixCls: 'kuma-title',
-  type: 'primary',
-};
-
-
-// http://facebook.github.io/react/docs/reusable-components.html
-Title.propTypes = {
-  children: PropTypes.any,
-  prefixCls: PropTypes.string,
-  type: PropTypes.oneOf(['primary', 'secondary', 'thirdary']),
-};
-
-Title.displayName = 'Title';
-
-module.exports = Title;
