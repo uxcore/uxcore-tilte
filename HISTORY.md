@@ -2,4 +2,4 @@
 
 ## 0.1.2
 
-* `FIX` React 15.x compatible
+* `FIXED` React 15.x compatible
