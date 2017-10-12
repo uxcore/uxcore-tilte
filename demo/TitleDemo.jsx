@@ -2,14 +2,14 @@
  * Title Component Demo for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
 
-const React = require('react');
-const Title = require('../src');
+import React from 'react';
+import Title from '../src';
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
 
   constructor(props) {
     super(props);
@@ -35,4 +35,3 @@ class Demo extends React.Component {
   }
 }
 
-module.exports = Demo;
