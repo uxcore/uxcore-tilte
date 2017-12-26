@@ -16,6 +16,7 @@ export default class Title extends Component {
   static propTypes = {
     children: PropTypes.any,
     prefixCls: PropTypes.string,
+    className: PropTypes.string,
     type: PropTypes.oneOf(['primary', 'secondary', 'thirdary']),
   };
 
@@ -30,11 +31,12 @@ export default class Title extends Component {
   }
 
   render() {
-    const { prefixCls, children, type } = this.props;
+    const { prefixCls, children, type, className } = this.props;
     return (
       <div
         className={classnames(prefixCls, {
           [`${prefixCls}-${type}`]: true,
+          [className]: !!className,
         })}
       >
         {children}
