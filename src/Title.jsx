@@ -18,11 +18,13 @@ export default class Title extends Component {
     prefixCls: PropTypes.string,
     className: PropTypes.string,
     type: PropTypes.oneOf(['primary', 'secondary', 'thirdary']),
+    noDecoration: PropTypes.bool,
   };
 
   static defaultProps = {
     prefixCls: 'kuma-title',
     type: 'primary',
+    noDecoration: false,
   };
 
   constructor(props) {
@@ -31,11 +33,12 @@ export default class Title extends Component {
   }
 
   render() {
-    const { prefixCls, children, type, className } = this.props;
+    const { prefixCls, children, type, className, noDecoration } = this.props;
     return (
       <div
         className={classnames(prefixCls, {
           [`${prefixCls}-${type}`]: true,
+          [`${prefixCls}-no-decoration`]: noDecoration,
           [className]: !!className,
         })}
       >
