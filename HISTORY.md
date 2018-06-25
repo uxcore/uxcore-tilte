@@ -1,5 +1,9 @@
 # history
 
+## 0.1.6
+
+* `FIXED` React 16.x compatible
+
 ## 0.1.5
 
 * `CHANGED` support new prop `noDecoration`
