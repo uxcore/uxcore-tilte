@@ -48,6 +48,7 @@ export default class Demo extends React.Component {
         <Icon name="baocun" className="demo-tilte-icon small" />
         <Title noDecoration type="thirdary">专业能力</Title>
         {tip}
+        <Title type="primary" prefixCls="hello">prefixCls 为 hello</Title>
       </div>
     );
   }

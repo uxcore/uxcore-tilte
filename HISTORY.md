@@ -1,5 +1,9 @@
 # history
 
+## 0.1.7
+
+* `CHANGED` support JS style export
+
 ## 0.1.6
 
 * `FIXED` React 16.x compatible
